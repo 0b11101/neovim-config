@@ -49,22 +49,23 @@ return packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
    -- Post-install/update hook with neovim command
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'lewis6991/gitsigns.nvim', 
     requires = { 'nvim-lua/plenary.nvim' },
     config = function() require('gitsigns').setup() end
   }
-  
+
   -- Colorschemes
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  --use "lunarvim/darkplus.nvim"
 
+  --use "lunarvim/darkplus.nvim"
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -74,6 +75,16 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
+   -- Telescope
+  use "nvim-telescope/telescope.nvim"
+  --  use 'nvim-telescope/telescope-media-files.nvim'
+  --
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"
   -- Lazy loading:
   -- Load on specific commands
   -- use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
