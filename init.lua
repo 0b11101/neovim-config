@@ -1,14 +1,14 @@
 require "me.options"
 require "me.keymaps"
 require "me.plugins"
+require "me.colorscheme"
 
 require('lualine').setup {
   options = {
-    theme  = horizon,
     icons_enabled = true,
     theme = 'auto',
     component_separators = { left = '', right = ''},
-    section_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''}, 
     disabled_filetypes = {},
     always_divide_middle = true,
     globalstatus = false,
