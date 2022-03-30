@@ -170,6 +170,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\lover\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\lover\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\lover\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",

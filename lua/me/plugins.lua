@@ -85,6 +85,10 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow"
+
+  --Rust
+  use "rust-lang/rust.vim"
+  
   -- Lazy loading:
   -- Load on specific commands
   -- use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}

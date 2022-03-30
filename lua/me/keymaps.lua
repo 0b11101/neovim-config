@@ -33,7 +33,9 @@ keymap("n", "<leader>qt", ":wq<cr>", opts)
 keymap("n", "<leader>nqt", ":q!<cr>", opts)
 keymap("n", "<leader>s", ":vsplit<cr>", opts)
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- copy/paste to/from clipboard
 keymap("v", "<leader>c", "\"+y", opts)
+keymap("v", "<leader>p", "\"+p", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
