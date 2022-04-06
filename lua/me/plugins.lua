@@ -77,8 +77,8 @@ return packer.startup(function(use)
 
    -- Telescope
   use "nvim-telescope/telescope.nvim"
-  --  use 'nvim-telescope/telescope-media-files.nvim'
-  --
+  use 'nvim-telescope/telescope-media-files.nvim'
+
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
@@ -88,7 +88,6 @@ return packer.startup(function(use)
 
   --Rust
   use "rust-lang/rust.vim"
-  
   -- Lazy loading:
   -- Load on specific commands
   -- use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}

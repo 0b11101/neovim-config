@@ -175,6 +175,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\lover\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
+  ["telescope-media-files.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\lover\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-media-files.nvim",
+    url = "https://github.com/nvim-telescope/telescope-media-files.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\lover\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
